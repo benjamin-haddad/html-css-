@@ -1,0 +1,58 @@
+  /*verifier le lien avec le html*/
+
+body {
+
+background-color: aqua;
+
+/* STYLISATION DE TEXTES */
+
+
+.intro {
+
+background-color: beige;
+
+
+}
+
+}
+
+h1{
+
+background-color: gray;
+
+
+
+}
+
+p {
+
+background-color: black;
+color: white ;
+text-align: right;
+
+}
+
+ .center {
+    text-align: center ;
+
+
+ }
+
+  .right{
+
+    text-align: right;
+  }
+
+  .left {
+
+
+ text-align: left;
+  }
+
+/*FLEX*/ 
+.flex {
+
+background-color: azure;
+
+
+}
