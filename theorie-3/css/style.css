@@ -1,8 +1,21 @@
   /*verifier le lien avec le html*/
 
-body {
+.body {
 
 background-color: aqua;
+
+}
+
+img {
+
+  width: 200px;
+  height: 200px;
+
+}
+
+
+
+
 
 /* STYLISATION DE TEXTES */
 
@@ -14,7 +27,7 @@ background-color: beige;
 
 }
 
-}
+
 
 h1{
 
@@ -54,5 +67,32 @@ text-align: right;
 
 background-color: azure;
 
+
+}
+
+div {
+
+  background-color: blue;
+}
+
+.title{
+
+  text-align: center;
+}
+
+.cover{
+
+  display: flex;
+  align-items: center;
+}
+
+.bloc {
+
+  padding: 10px;
+  background-color: brown;
+  border-width: 2px;
+  border-color: black;
+  border-style: solid; 
+  margin: 10px;
 
 }
