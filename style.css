@@ -1,80 +1,78 @@
-
-/* Start utilisation du header*/
-
-
-.header {
+body{
 
 background-color: grey;
-display: flex;
-justify-content: space-between;
-align-items: center;
-}
-
-.list-links{
-
-display: flex;
-list-style: none;
-column-gap: 20px;
-align-items: center;
 
 }
 
-.logo {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
 
-width: 125px;
-height: 25px;
+    width: 100%;
+    border: 3px solid black;
+    display: flex;
+}
+/*vw = viewport with */
+/*vw = viewport height */
 
+
+
+.left {
+    width: 50%;
+    background-color: blue;
 }
 
-.nav-link {
 
-text-transform: uppercase;
+.right {
+    width: 50%;
+    height: 100vh;
+    background-color: red;
+    }
+/* Condition la width ne doit pas dépasser la max-width,
+qui est de 1000px*/
+@media (max-width: 1000px) {
 
+    .right{
+        background-color: green;
+        flex-grow: 1;
+    }
+    .container{
+     flex-direction: column;
+    height:100vh;
 
-}
+    }
+    .left, .right {
 
-.nav-link:last-child a {
-
-background-color: black;
-color: white;
-padding: 10px 15px;
-border-radius: 50px;
-}
-/*
-AUTRES Selecteurs possibles :
-
-pour le premier élément
-.nav-link:fist-child {
-background-color: red;
-
-}
-pour le premier élément
-.nav-link:first-child{
-
-background-color: aquamarine;
+        width: 100%;
+        
+    }
 
 }
-Pour l'élément à la position 2 
-.nav-link:nth-child(2){
+/* la condition ne doit pas dépasser la max-width,
+qui est de 500px*/
 
-background-color: yellow;
+@media (max-width: 500px) {
+
+    .right{
+        background-color: purple;
 
 
-}
-*/
-
-
-/* start utilisation de la cover*/
-
-.cover {
-
-display: flex;
-
+    }
 }
 
-.image-office{
+/* Condition:
+la width doit être supérieur à la min-width,
+qui est de 500px*/
 
-width: 55%;
-flex-shrink: 0;
+    @media (min-width: 500px) {
 
+     .left{
+         background-color: purple;
+    
+    
+        }
+    
 }
